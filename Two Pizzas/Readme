@@ -1,0 +1,63 @@
+Hitesh and Ayush went to a pizza shop to eat pizza. The restaurant is a bit unusual: it offers n slices of pizza aligned in a row, and a customer has to choose a continuous subsegment of these slices to buy.
+
+The slices of pizzas are of two types: either with oregano or with chilli flakes. Let's denote the type of the ith slice from the left slice as si, where si = 1 means it is with oregano, and si = 2 means it is with chilli.
+
+Hitesh does not like oregano and Ayush does not like chilli. They wants to choose such a continuous subsegment of slices such that it has equal number of slices of each type and each half of the subsegment has only one type of slice.
+
+For example, subsegment [2,2,2,1,1,1] is valid, but subsegment [1,2,1,2,1,2] is not, because both halves contain both types of slices.
+
+Print the length of the longest continuous subsegment of slices they can buy.
+
+Example
+
+input
+
+7
+
+2 2 2 1 1 2 2
+
+Output
+
+4
+
+Explanation : They can choose the subsegment [2,2,1,1] or the subsegment [1,1,2,2] with length 4.
+
+Input Format
+
+The first line contains a single integer n, the number of slices in the row.
+
+The next line contains n integers s1, s2, ...., sn (si = 1 denoting oregano toppings or si = 2 denoting chilli toppings), representing the toppings of slices from left to right.
+
+Constraints
+
+2 <= n <= 10^5
+
+si = 1 or si = 2
+
+Expected Time Complexity: O(n)
+
+Output Format
+
+The only line contains a single positive integer, the length of the longest continuous subsegment of slices they can buy.
+
+Sample Input 0
+
+7
+2 2 2 1 1 2 2
+Sample Output 0
+
+4
+Sample Input 1
+
+6
+1 2 1 2 1 2
+Sample Output 1
+
+2
+Sample Input 2
+
+9
+2 2 1 1 1 2 2 2 2
+Sample Output 2
+
+6
