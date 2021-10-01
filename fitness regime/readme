@@ -1,0 +1,29 @@
+Your friend follows a strict fitness regime. According to which, he can consume atmost k amount of calories in a single day. Your friend has given you a list of n food items and asked for your help.List is in the form of an array where ith food item(0 based indexing) has c[i] amount of calories. Your task is to find out the maximum food items that can be consumed by your friend in a single day keeping in mind the calorie intake and also the food items consumed by your friend must be distinct in terms of calorie content.
+
+EXAMPLE:
+
+Consider a list of n=5 food items and maximum calorie intake k=400. Calorie content in food items is given in the form of an array:[120,80,110,80,170]
+
+EXPLANATION:
+
+Maximum food items that can be consumed by your friend is 3 of calorie content 80,110 and 120 or you can choose 170,110 and 80 . You cannot consume another item of calorie content-80 because you need to consume food items having distict calorie content.
+
+Input Format
+
+line 1:contains two integers n and k denoting number of food items and maximum calorie intake respectively.
+
+line 2: contains n positive(non-zero) spaced integers where ith integer denotes the calorie content in ith food item where i=0,1...,n-1.
+
+Constraints
+
+1<=n,k<=100000
+
+1<=c[i]<=100000 where c[i] is the calorie content in ith food item
+
+Time Complexity: O(nlogn)
+
+Space Complexity: 256MB
+
+Output Format
+
+Print a single integer denoting the maximum number of food items that can be consumed by your friend in a single day subject to the constraints given in the problem statement.
