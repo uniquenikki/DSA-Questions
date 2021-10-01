@@ -1,0 +1,31 @@
+It is Amy's birthday today and she has planned a party at her home. She invited her n friends for the same. But as we know it is hard to find punctual people in today's time, some of her friends (maybe 0) may arrive late.But it is known that all her friends will arrive within 10 minutes of the arrival time and do not delay their arrival anymore.It is also known that all the invited friends will come to her party.
+
+Therefore, delay time of friends will be given in the form of an array where each element will be between 0 and 10 only. 0 indicating arrival on time and as we move further each minute, it means being late by 1 minute.Amy has decided she will start the party the moment n/2(lower bound) of her friends arrive keeping in mind, it is not injustice to those who arrived on time.Now, find the delay in time(ranging from 0 to 10 only)in starting the party.
+
+NOTE: if only 1 friend is invited it is obvious that party will start only after its arrival.
+
+EXAMPLE:
+
+Consider Amy invided 8 friends for the party.
+
+Their delay time is given by [0,1,2,0,7,3,4,4]. Therefore, there will be delay of 2 minutes in starting the party as friends with indices 0,1,2,3-that is a total of 4(8/2) friends will arrive at the party.
+
+Input Format
+
+line 1:contains integer n denoting number of friends Amy invited.
+
+line 2:contains n spaced integers where ith integer denotes the delay time of ith friend where i<=0<=(n-1).
+
+Constraints
+
+1<=n<=100000
+
+0<=d[i]<=10 where d[i] denotes delay time of ith friend.
+
+Time Complexity: O(nlogn)
+
+Space Complexity: 256MB
+
+Output Format
+
+Print a single integer denoting the delay in time in starting the party. Print 0 in case there is no delay in starting the party.
