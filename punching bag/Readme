@@ -1,0 +1,13 @@
+Saymedgm loves boxing and now inorder to train him his coach has given him an assignment. It consist of n punching bags numbered 1 to n. Each punching bag has a durability a[i] (1 <= i <= n). If till now saymedgm has knocked x bags then he needs to punch next bag ((a[i] * x) + 1) times in order to knock that bag. Find the minimum number of punches saymedgm need to make inorder to knock all bags. He can punch bags in any order
+
+Input Format
+
+The first line of the input contains one integer n (2≤n≤1000) — the number of bags. The second line of the input contains the sequence a[1],a[2],…,a[n] (1≤a[i]≤1000), where a[i] is the durability of the i-th bag
+
+Constraints
+
+1 <= n <= 1000 1 <= a[i] <= 1000
+
+Output Format
+
+Single integer denoting minimum number of punches required
